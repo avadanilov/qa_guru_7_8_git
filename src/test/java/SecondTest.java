@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class SecondTest {
+import org.junit.jupiter.api.Test;
+
+public class SecondTest {
+
+    @Test
+    void secondTest(){}
 }
