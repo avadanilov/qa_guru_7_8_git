@@ -4,7 +4,7 @@ import com.codeborne.selenide.Selenide;
 public class FirstTest {
     @Test
     void firstTest(){
-        System.out.println("firstTest");
+        System.out.println("FirstTest !!!");
         Selenide.open("http://ya.ru");
     }
 }
