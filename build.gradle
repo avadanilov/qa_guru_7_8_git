@@ -8,12 +8,21 @@ version '1.0'
 repositories {
     mavenCentral()
 }
+ext {
+    selenideVersion = "5.23.0"
+    junitVersion = "5.8.0-M1"
+}
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
+    testImplementation "com.codeborne:selenide:${selenideVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.7.0"
 }
 
 test {
     useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
