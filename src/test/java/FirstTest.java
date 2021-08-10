@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class FirstTest {
     @Test
     void firstTest() {
-        System.out.println("FirstTest !!! in github");
+        System.out.println("FirstTest!");
         Selenide.open("http://ya.ru");
     }
 }
